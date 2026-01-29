@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-import static jdk.internal.org.jline.utils.InfoCmp.Capability.user1;
+
 
 @Configuration
 @EnableWebSecurity
