@@ -44,12 +44,12 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailService(){
         UserDetails user1 = User.withUsername("user1")
-                .password("{noop}password")
+                .password(passwordEncoder().encode("password"))
                 .roles("USER")
                 .build();
 
         UserDetails admin = User.withUsername("admin")
-                .password("{noop}adminPass")
+                .password(passwordEncoder().encode("adminPass"))
                 .roles("ADMIN")
                 .build();
         JdbcUserDetailsManager userDetailsManager
